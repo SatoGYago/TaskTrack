@@ -18,10 +18,10 @@ It lets you **add**, **list**, **complete**, and **remove** tasks, saving everyt
 ## Project Structure
 
 tasktrack/
-├── main.py # CLI menu + user interaction
-├── logic.py # task operations (add/list/complete/remove)
-├── storage.py # JSON persistence (load/save)
-└── tasks.json # created automatically after saving tasks
+- main.py # CLI menu + user interaction
+- logic.py # task operations (add/list/complete/remove)
+- storage.py # JSON persistence (load/save)
+- tasks.json # created automatically after saving tasks
 
 
 ## Requirements
@@ -165,6 +165,80 @@ tasktrack/
 ```bash
 python main.py
 
+Uso (Opções do Menu)
+
+Ao executar o programa, você verá:
+
+1 Add tasks
+
+2 Complete tasks
+
+3 Remove tasks
+
+4 List tasks
+
+5 Clean console
+
+6 Exit
+
+Add Task
+
+Você deverá informar:
+
+Título
+
+Data
+
+Prioridade (1/2/3)
+
+Complete task
+
+Digite o ID da tarefa que deseja marcar como concluída.
+
+Remove Task
+
+Digite o ID da tarefa que deseja remover.
+
+List Task
+
+Digite:
+
+1 → listar tarefas pendentes com prioridade 1
+2 → listar tarefas pendentes com prioridade 2
+3 → listar tarefas pendentes com prioridade 3
+4 → listar tarefas concluídas
+
+Formato dos Dados (tasks.json)
+
+As tarefas são armazenadas como uma lista de dicionários, por exemplo:
+[
+  {
+    "id": 1,
+    "title": "Study CS50",
+    "date": "2026-02-11",
+    "priority": 2,
+    "done": false
+  }
+]
+
+Observações
+
+Os IDs são gerados automaticamente (maior ID existente + 1).
+
+Listar tarefas não modifica o arquivo (apenas adicionar, concluir ou remover salvam alterações).
+
+Possíveis Melhorias (Ideias Futuras)
+
+Validar formato da data (YYYY-MM-DD)
+
+Adicionar opção para listar todas as tarefas pendentes (ordenadas por prioridade)
+
+Editar título/data/prioridade de uma tarefa
+
+Adicionar busca por palavra-chave
+
+Implementar testes automatizados
+```
 Objetivo do Projeto
 
 Este projeto foi desenvolvido para praticar:
@@ -181,7 +255,7 @@ Organização modular do código
 
 Separação de responsabilidades
 
-Melhorias Futuras
+## Melhorias Futuras
 
 Validação de formato de data
 
