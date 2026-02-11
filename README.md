@@ -119,7 +119,7 @@ Made for practice with:
 functions, lists/dicts, file handling, JSON, and modular code organization.
 
 ---
-
+```
 ## 🇧🇷 Versão em Português
 
 ### Sobre o Projeto
