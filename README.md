@@ -120,7 +120,7 @@ functions, lists/dicts, file handling, JSON, and modular code organization.
 
 ---
 ```
-## 🇧🇷 Versão em Português
+## Versão em Português
 
 ### Sobre o Projeto
 
