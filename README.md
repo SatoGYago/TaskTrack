@@ -266,5 +266,3 @@ Editar tarefas existentes
 Busca por palavra-chave
 
 Implementação de testes automatizados
-
-::contentReference[oaicite:0]{index=0}
